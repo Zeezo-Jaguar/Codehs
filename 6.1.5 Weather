@@ -1,0 +1,23 @@
+#define sunny weather and footwear
+def sunny():
+    print("On a sunny day, sandals are appropriate footwear.")
+#define rainy weather and footwear
+def rainy():
+    print("On a rainy day, galoshes are appropriate footwear.")
+#define snow and FT-wear
+def snowy():
+    print("On a snowy day, boots are appropriate footwear.")
+
+def get_footwear():
+    weather = input("What is the weather? (sunny, rainy, snowy): ")
+    if weather == "sunny":
+        sunny()
+    elif weather == "rainy":
+        rainy()
+    elif weather == "snowy":
+        snowy()
+# if input is invalid     
+    else:
+        print("Invalid option chosen! Please enter 1 of 3 options 'sunny', 'rainy', or 'snowy'.")
+
+get_footwear()
