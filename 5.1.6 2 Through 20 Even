@@ -1,0 +1,4 @@
+even_number = 0
+while(even_number!=20):
+    even_number+=2
+    print(even_number)
