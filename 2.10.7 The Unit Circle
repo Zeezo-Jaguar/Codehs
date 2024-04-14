@@ -1,0 +1,23 @@
+public class UnitCircle 
+{
+    public static void main(String[] args)
+    {
+       System.out.println("Radians: (cos, sin)");
+        double[] angles = {0, Math.PI / 2, Math.PI};
+        // Use a for loop to iterate over the angles
+for (double angle : angles) {
+    // Calculate the cosine of the angle
+    double cosine = Math.cos(angle);
+    // Round the cosine value to two decimal places
+    cosine = Math.round(cosine * 100) / 100.0;
+    // Calculate the sine of the angle
+    double sine = Math.sin(angle);
+    // Round the sine value to two decimal places
+    sine = Math.round(sine * 100) / 100.0;
+    // Print the angle, the cosine of the angle, and the sine of the angle
+    
+    System.out.println(angle + ": " + cosine + ", " + sine);
+}
+        // Put your code here!
+    }
+}
