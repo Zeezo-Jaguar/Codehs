@@ -1,4 +1,5 @@
 //Currency.java 
+//!!warning this code is divided into 2 files( Currency.java and Currencytester.java)!!
 //.......................
 import java.lang.Math;
 
@@ -41,5 +42,32 @@ public class Currency
     public String toString()
     {
         return "$" + getDollars() + "." + getCents();
+    }
+}
+
+//Currency.tester
+//....................
+public class CurrencyTester
+{
+    public static void main(String[] args)
+    {
+        Currency bankRoll = new Currency(12.45);
+        
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        
+        bankRoll.setValue(20.56);
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        bankRoll.setValue(67.78);
+        System.out.println("Value of bankroll: " + bankRoll);
+        System.out.println("Dollars: " + bankRoll.getDollars());
+        System.out.println("Cents: " + bankRoll.getCents());
+        
+        
     }
 }
