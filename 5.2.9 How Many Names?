@@ -1,0 +1,9 @@
+how_many_names = int(input("How many names do you have? "))
+
+full_name = ""
+
+for i in range(how_many_names):
+    name = input(f"Enter name {i+1}: ")
+    full_name += name + " "
+    
+    print("Your full name is:", full_name.strip())
