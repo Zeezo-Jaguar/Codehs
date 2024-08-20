@@ -1,0 +1,18 @@
+public class Multiply extends ConsoleProgram
+{
+    public void run()
+    {
+        multiply(2, 20);
+        multiply(5, 19);
+        multiply(100, 15);
+        
+    }
+    
+    private void multiply(int p, int r)
+    
+    {
+    int m = p * r;
+     System.out.println(m);
+       
+    }
+}
