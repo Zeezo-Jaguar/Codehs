@@ -1,0 +1,6 @@
+total = 0
+for test in range(1, 4):
+    score = int(input(f"Enter test score {test}: "))
+    total += score
+average = total / 3
+print(f"The average of the three test scores is {average}")
