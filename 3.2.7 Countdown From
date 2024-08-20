@@ -1,0 +1,17 @@
+public class Countdown extends ConsoleProgram
+{
+    public void run()
+    {
+        countdownFrom(5);
+    }
+    
+    private void countdownFrom(int ctdf)
+    {
+       
+       for ( int  i = 0; i <= ctdf+3; i++){
+           System.out.println(ctdf);
+           ctdf-=1;
+       } 
+       // Your code here
+    }
+}
